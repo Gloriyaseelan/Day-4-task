@@ -1,0 +1,90 @@
+<html>
+<body>
+<h1>FOCUS</h1>
+
+<p>come here-lets see how to get focus</br>
+go away-lets see how to lose focus
+</p>
+
+<p id="p1">
+</p>
+
+<script>
+setInterval("Fokus()",1);
+function Fokus()
+{
+var str;
+if(document.hasFocus())
+{
+str="Get Focus";
+}
+else
+{
+str="Lose Focus";
+}
+document.getElementById("p1").innerHTML=str;
+}
+
+</script>
+
+
+<h1>JS DOT</h1>
+
+<script>
+ document.write("learning is fun");
+</script>
+
+<script>
+window.alert(123);
+</script>
+
+<button onclick="window.print()">print</button>
+
+
+
+<h1>JS VARIABLE</h1>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="para"></p>
+<input type="text"name="fname"/>
+
+<script>
+  var num1=45;
+  var num2=25;
+  var res=num1+num2;
+document.getElementById("p1").innerHTML=res;
+</script>
+<script>
+  let num1=55;
+  let num2=35;
+  let res=num1+num2;
+document.getElementById("p2").innerHTML=res;
+</script>
+
+<script>
+  num1=75;
+  num2=25;
+  res=num1+num2;
+document.getElementById("p3").innerHTML=res;
+
+let subject="JavaScript";
+document.getElementById("p4").innerHTML=subject;
+
+let corp="softura",year="2022",tech="dotnet";
+document.getElementById("para").innerHTML=corp+" "+year+" "+"is getting trained in"+" "+tech;
+
+document.getElementByName("fname").innerHTML="WELCOME";
+</script>
+
+
+<h1>BUTTON</h1>
+<button onclick="this.innerHTML=Date()">click me</button>
+
+
+
+
+</body>
+</html>

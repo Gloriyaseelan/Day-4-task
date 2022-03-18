@@ -1,19 +1,32 @@
 using System;
-class name
+class members
 {
+int age;
+string name;
+
+public members()
+{
+Console.WriteLine("enter ur age:");
+ age=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("enter your name:");
+ name=Console.ReadLine();
+
+}
+
+public members(int age,string name)
+{
+this.age=age;
+this.name=name;
+}
+
+
 public static void Main()
 {
-string name;
-int age;
-Console.WriteLine("enter your name:");
-name=Console.ReadLine();
-Console.WriteLine("enter your age:");
-age=Convert.ToInt32(Console.ReadLine());
+members obj=new members();\n
+members obj1=new members(22,"gayu");\n
+Console.WriteLine(obj1.age);/n
+Console.WriteLine(obj1.name);/n
 
-for( int i=0;i<age;i++)
-{
-Console.WriteLine(" your name is "+ name );
-}
 
 }
 }
